@@ -10,9 +10,7 @@ public abstract class Sudoku4x4 implements SudokuInterface {
     private int colonne=0;
 
 public Sudoku4x4(int ligne, int colonne){
-    this.ligne=ligne;
-    this.colonne=colonne;
-    tableau[ligne][colonne] =EMPTY;
+ tableau = new char[ligne][colonne];
 }
 
     public void addValue(int ligne, int colonne, char valeur)
